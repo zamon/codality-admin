@@ -1,0 +1,65 @@
+{
+    "name": "codality/codality-admin",
+    "description": "codality-admin. Open-source Laravel Admin panel. Based on open-admin, special thanks to z-song",
+    "type": "library",
+    "keywords": ["laravel", "admin", "grid", "form", "codality-admin","free"],
+    "homepage": "https://github.com/codality/codality-admin",
+    "license": "BSD 2",
+    "authors": [
+        {
+            "name": "Zainal Abidin | codality",
+            "email": "za@codality.id"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.9",
+        "symfony/dom-crawler": "*",
+        "doctrine/dbal": "*"
+    },
+    "require-dev": {
+        "laravel/laravel": ">=11.0",
+        "fakerphp/faker": "*",
+        "intervention/image": "*",
+        "laravel/browser-kit-testing": "*",
+        "spatie/phpunit-watcher": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodalityAdmin\\Admin\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Models\\": "tests/models",
+            "Tests\\Controllers\\": "tests/controllers"
+        },
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "sass": "sass --watch resources/assets/open-admin/scss/styles.scss:resources/assets/open-admin/css/styles.css resources/assets/open-admin/scss/pages:resources/assets/open-admin/css/pages --style compressed",
+        "test": "./vendor/bin/phpunit"
+    },
+    "suggest": {
+        "intervention/image": "Required to handling and manipulation upload images (~2.3).",
+        "spatie/eloquent-sortable": "Required to built orderable gird."
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CodalityAdmin\\Admin\\AdminServiceProvider"
+            ],
+            "aliases": {
+                "Admin": "CodalityAdmin\\Admin\\Facades\\Admin"
+            }
+        }
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
