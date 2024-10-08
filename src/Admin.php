@@ -21,7 +21,7 @@ class Admin
     use HasAssets;
 
     /**
-     * The Open-admin version.
+     * The codality-admin version.
      *
      * @var string
      */
@@ -63,13 +63,13 @@ class Admin
     protected static $bootedCallbacks = [];
 
     /**
-     * Returns the long version of Open-admin.
+     * Returns the long version of codality-admin.
      *
      * @return string The long application version
      */
     public static function getLongVersion()
     {
-        return sprintf('Open-admin <comment>version</comment> <info>%s</info>', self::VERSION);
+        return sprintf('codality-admin <comment>version</comment> <info>%s</info>', self::VERSION);
     }
 
     /**

@@ -41,7 +41,7 @@ return [
     | Codality-Admin bootstrap setting
     |--------------------------------------------------------------------------
     |
-    | This value is the path of open-admin bootstrap file.
+    | This value is the path of codality-admin bootstrap file.
     |
     */
     'bootstrap' => app_path('Admin/bootstrap.php'),
@@ -124,7 +124,7 @@ return [
         'providers' => [
             'admin' => [
                 'driver' => 'eloquent',
-                'model'  => OpenAdmin\Admin\Auth\Database\Administrator::class,
+                'model'  => CodalityAdmin\Admin\Auth\Database\Administrator::class,
             ],
         ],
 
@@ -172,7 +172,7 @@ return [
     | Codality-Admin database settings
     |--------------------------------------------------------------------------
     |
-    | Here are database settings for open-admin builtin model & tables.
+    | Here are database settings for codality-admin builtin model & tables.
     |
     */
     'database' => [
@@ -182,19 +182,19 @@ return [
 
         // User tables and model.
         'users_table' => 'admin_users',
-        'users_model' => OpenAdmin\Admin\Auth\Database\Administrator::class,
+        'users_model' => CodalityAdmin\Admin\Auth\Database\Administrator::class,
 
         // Role table and model.
         'roles_table' => 'admin_roles',
-        'roles_model' => OpenAdmin\Admin\Auth\Database\Role::class,
+        'roles_model' => CodalityAdmin\Admin\Auth\Database\Role::class,
 
         // Permission table and model.
         'permissions_table' => 'admin_permissions',
-        'permissions_model' => OpenAdmin\Admin\Auth\Database\Permission::class,
+        'permissions_model' => CodalityAdmin\Admin\Auth\Database\Permission::class,
 
         // Menu table and model.
         'menu_table' => 'admin_menu',
-        'menu_model' => OpenAdmin\Admin\Auth\Database\Menu::class,
+        'menu_model' => CodalityAdmin\Admin\Auth\Database\Menu::class,
 
         // Pivot table for table above.
         'operation_log_table'    => 'admin_operation_log',
@@ -209,7 +209,7 @@ return [
     | User operation log setting
     |--------------------------------------------------------------------------
     |
-    | By setting this option to open or close operation log in open-admin.
+    | By setting this option to open or close operation log in codality-admin.
     |
     */
     'operation_log' => [
@@ -261,9 +261,9 @@ return [
     |--------------------------------------------------------------------------
     |
     | Set a default avatar for newly created users.
-    |
+    | **ganti**
     */
-    'default_avatar' => '/vendor/open-admin/open-admin/gfx/user.svg',
+    'default_avatar' => '/vendor/codality-admin/codality-admin/gfx/user.svg',
 
     /*
     |--------------------------------------------------------------------------
@@ -314,7 +314,7 @@ return [
     | Show version at footer
     |--------------------------------------------------------------------------
     |
-    | Whether to display the version number of open-admin at the footer of
+    | Whether to display the version number of codality-admin at the footer of
     | each page
     |
     */
@@ -388,7 +388,7 @@ return [
     | The global Grid action display class. (Actions::class, DropdownActions:class or ContextMenuActions::class)
     |--------------------------------------------------------------------------
     */
-    'grid_action_class' => \OpenAdmin\Admin\Grid\Displayers\Actions\Actions::class,
+    'grid_action_class' => \CodalityAdmin\Admin\Grid\Displayers\Actions\Actions::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -406,7 +406,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | You can find all available extensions here
-    | https://github.com/open-admin-extensions.
+    | https://github.com/codality-admin-extensions.
     |
     */
     'extensions' => [

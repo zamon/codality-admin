@@ -20,7 +20,7 @@ class ExtendCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Build a Open-admin extension';
+    protected $description = 'Build a codality-admin extension';
 
     /**
      * @var string

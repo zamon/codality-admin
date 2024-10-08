@@ -1,6 +1,6 @@
 {
     "name": "codality/codality-admin",
-    "description": "codality-admin. Open-source Laravel Admin panel. Based on open-admin, special thanks to z-song",
+    "description": "codality-admin. Open-source Laravel Admin panel. Based on codality-admin, special thanks to z-song",
     "type": "library",
     "keywords": ["laravel", "admin", "grid", "form", "codality-admin","free"],
     "homepage": "https://github.com/codality/codality-admin",
@@ -42,7 +42,7 @@
         ]
     },
     "scripts": {
-        "sass": "sass --watch resources/assets/open-admin/scss/styles.scss:resources/assets/open-admin/css/styles.css resources/assets/open-admin/scss/pages:resources/assets/open-admin/css/pages --style compressed",
+        "sass": "sass --watch resources/assets/codality-admin/scss/styles.scss:resources/assets/codality-admin/css/styles.css resources/assets/codality-admin/scss/pages:resources/assets/codality-admin/css/pages --style compressed",
         "test": "./vendor/bin/phpunit"
     },
     "suggest": {

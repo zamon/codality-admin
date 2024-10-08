@@ -1,6 +1,6 @@
 <?php
 
-use OpenAdmin\Admin\Auth\Database\Administrator;
+use CodalityAdmin\Admin\Auth\Database\Administrator;
 
 class IndexTest extends TestCase
 {
@@ -22,9 +22,9 @@ class IndexTest extends TestCase
             ->see('Laravel version')
 
             ->see('Available extensions')
-            ->seeLink('open-admin-ext/helpers', 'https://github.com/open-admin-extensions/helpers')
-            ->seeLink('open-admin-ext/backup', 'https://github.com/open-admin-extensions/backup')
-            ->seeLink('open-admin-ext/media-manager', 'https://github.com/open-admin-extensions/media-manager')
+            ->seeLink('codality-admin-ext/helpers', 'https://github.com/codality-admin-extensions/helpers')
+            ->seeLink('codality-admin-ext/backup', 'https://github.com/codality-admin-extensions/backup')
+            ->seeLink('codality-admin-ext/media-manager', 'https://github.com/codality-admin-extensions/media-manager')
 
             ->see('Dependencies')
             ->see('php')

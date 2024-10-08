@@ -1,8 +1,8 @@
 <?php
 
-use OpenAdmin\Admin\Auth\Database\Administrator;
-use OpenAdmin\Admin\Auth\Database\Permission;
-use OpenAdmin\Admin\Auth\Database\Role;
+use CodalityAdmin\Admin\Auth\Database\Administrator;
+use CodalityAdmin\Admin\Auth\Database\Permission;
+use CodalityAdmin\Admin\Auth\Database\Role;
 
 class PermissionsTest extends TestCase
 {

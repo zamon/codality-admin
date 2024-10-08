@@ -2,9 +2,9 @@
 
 namespace Tests\Controllers;
 
-use OpenAdmin\Admin\Controllers\AdminController;
-use OpenAdmin\Admin\Form;
-use OpenAdmin\Admin\Grid;
+use CodalityAdmin\Admin\Controllers\AdminController;
+use CodalityAdmin\Admin\Form;
+use CodalityAdmin\Admin\Grid;
 use Tests\Models\Tag;
 use Tests\Models\User;
 
