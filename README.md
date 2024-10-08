@@ -1,3 +1,3 @@
 Codality Admin
 
-Fork from: https://github.com/open-admin-org/open-admin
+Fork from https://github.com/open-admin-org/open-admin for Laravel 11.x
